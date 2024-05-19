@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/pg.css">
+    <title>Education Web App</title>
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+</head>
+
+<body>
+    <nav>
+        <div class="container nav__container">
+            <a href="index" class="logo">
+                <h4>YourAcademy</h4>
+            </a>
+            <ul class="nav__menu">
+                <li><a href="index">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="facilities">More</a></li>
+                <li><a href="contact">Contact</a></li>
+                <li><a href="/login">Login</a></li>
+            </ul>
+            <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+            <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+        </div>
+    </nav>
+    
+    <section class="PgCrousel__container buysellSwiper ">
+		<h4>
+	        <a id="pgMap" href="/Map/">Find PG on Map</a>
+		</h4> <br><br>
+        <div class="swiper-wrapper">
+
+            <div class="buysellcrousel swiper-slide">
+                <img src="/images/PG/slide-image/pic1.jpg" alt="">
+            </div>
+
+            <div class="buysellcrousel swiper-slide">
+                <img src="/images/PG/slide-image/pic2.jpg" alt="">
+            </div>
+
+            <div class="buysellcrousel swiper-slide">
+                <img src="/images/PG/slide-image/pic3.jpg" alt="">
+            </div>
+
+            <div class="buysellcrousel swiper-slide">
+                <img src="/images/PG/slide-image/pic4.jpg" alt="">
+            </div>
+
+            <div class="buysellcrousel swiper-slide">
+                <img src="/images/PG/slide-image/pic5.jpg" alt="">
+            </div>
+
+            <div class="buysellcrousel swiper-slide">
+                <img src="/images/PG/slide-image/pic6.jpg" alt="">
+            </div>
+
+            <div class="buysellcrousel swiper-slide">
+                <img src="/images/PG/slide-image/pic7.jpg" alt="">
+            </div>
+
+            <div class="buysellcrousel swiper-slide">
+                <img src="/images/PG/slide-image/pic8.jpg" alt="">
+            </div>
+
+            <div class="buysellcrousel swiper-slide">
+                <img src="/images/PG/slide-image/pic9.jpg" alt="">
+            </div>
+
+            <div class="buysellcrousel swiper-slide">
+                <img src="/images/PG/slide-image/pic10.jpg" alt="">
+            </div>
+
+
+        </div>
+        <div class="swiper-pagination"></div>
+
+    </section>
+
+    <section class="PgFinder">
+
+        <div class="container filter-bar">
+            <div class="filter-img">
+                <img src="/images/PG/filter.png" alt="filter" />
+                <p>Filter</p>
+            </div>
+            <div class="filter-img">
+                <img src="/images/PG/desc.png" alt="sort-desc" />Low
+            </div>
+            <div class="filter-img">
+                <img src="/images/PG/asc.png" alt="sort-asc" />High
+            </div>
+        </div>
+
+        <div class="container pg__container">
+            <article class="rooms">
+                <div class="room__image">
+                    <img src="/images/PG/properties/mpg1.jpg" alt="">
+                </div>
+                <div class="details">
+                    <div class="rating">
+                        <div class="">
+                            <i class="uil uil-favorite"></i>
+                            <i class="uil uil-favorite"></i>
+                            <i class="uil uil-favorite"></i>
+                            <i class="uil uil-favorite"></i>
+                            <i class="uis uis-star-half-alt"></i>
+                            <p>4 - Star</p>
+                        </div>
+                        <div class="interested__container">
+                            <i class="uil uil-heart"></i>
+                            <div class="interested-text">3 interested</div>
+                        </div>
+                    </div>
+                    <div class="room__info">
+                        <h4>Manglam Paying Guest</h4>
+                        <p>near gate no. 2, Central University of Haryana, Jant-Pali, Mahendragarh, Haryana - 123029
+                        </p>
+                        <div class="gender__image">
+                            <img class="gender" src="/images/PG/male.png" />
+                        </div>
+                    </div>
+                    <div class="price">
+                        <p>Price: 5,500</p>
+                        <!-- <p>5,500/-</p> -->
+                        <a href="ManglamPg.html" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div class="container pg__container">
+            <article class="rooms">
+                <div class="room__image">
+                    <img src="/images/PG/properties/bpg1.jpg" alt="">
+                </div>
+                <div class="details">
+                    <div class="rating">
+                        <div class="">
+                            <i class="uil uil-favorite"></i>
+                            <i class="uil uil-favorite"></i>
+                            <i class="uil uil-favorite"></i>
+                            <i class="uil uil-favorite"></i>
+                            <i class="uil uil-favorite"></i>
+
+                            <p>5 - Star</p>
+                        </div>
+                        <div class="interested__container">
+                            <i class="uil uil-heart"></i>
+                            <div class="interested-text">9 interested</div>
+                        </div>
+                    </div>
+                    <div class="room__info">
+                        <h4>Balganesha Paying Guest</h4>
+                        <p>near gate no. 2, Central University of Haryana, Jant-Pali, Mahendragarh, Haryana - 123029
+                        </p>
+                        <div class="gender__image">
+                            <img class="gender" src="/images/PG/unisex.png" />
+                        </div>
+                    </div>
+                    <div class="price">
+                        <p>Price: 5,000</p>
+                        <!-- <p>5,000/-</p> -->
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+
+        <div class="container pg__container">
+            <article class="rooms">
+                <div class="room__image">
+                    <img src="/images/PG/properties/mpg3.jpg" alt="">
+                </div>
+                <div class="details">
+                    <div class="rating">
+                        <div class="">
+                            <i class="uil uil-favorite"></i>
+                            <i class="uil uil-favorite"></i>
+                            <i class="uil uil-favorite"></i>
+
+                            <p>3 - Star</p>
+                        </div>
+                        <div class="interested__container">
+                            <i class="uil uil-heart"></i>
+                            <div class="interested-text">15 interested</div>
+                        </div>
+                    </div>
+                    <div class="room__info">
+                        <h4>ShreeRam Paying Guest</h4>
+                        <p>near gate no. 2, Central University of Haryana, Jant-Pali, Mahendragarh, Haryana - 123029
+                        </p>
+                        <div class="gender__image">
+                            <img class="gender" src="/images/PG/female.png" />
+                        </div>
+                    </div>
+                    <div class="price">
+                        <p>Price: 4,500</p>
+                        <!-- <p>4,500/-</p> -->
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+    </section>
+
+<table id="pgTable" border="1">
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>Username</th>
+				<th>Pg Name</th>
+				<th>Reviews</th>
+			</tr>
+		</thead>
+		
+		<tbody>
+			<tr th:each="review : ${reviews}">
+				<td th:text="${review.id}" />
+				<td th:text="${review.userName}" /> 
+				<td th:text="${review.pgName}" /> 
+				<td th:text="${review.reviews}" /> 
+			</tr>
+		</tbody>
+	</table>
+	
+	<br><br>
+	<a class="pgReview" href="addReview">Add Review</a>
+	<br><br>
+	<br><br>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__1">
+                <a href="index" class="footer__logo">
+                    <img src="./images/fulllogo.png" alt="">
+                </a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, esse.</p>
+            </div>
+
+            <div class="footer__2">
+                <h4>Permalinks</h4>
+                <ul class="permalinks">
+                    <li><a href="index">Home</a></li>
+                    <li><a href="about">About</a></li>
+                    <li><a href="facilities">More Facilities</a></li>
+                    <li><a href="contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__3">
+                <h4>Privacy</h4>
+                <ul class="privacy">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__4">
+                <h4>Contact Us</h4>
+                <div>
+                    <p>+91 9876543210</p>
+                    <p>gautam@gmail.com</p>
+                </div>
+                <ul class="footer__socials">
+                    <li><a href="#"><i class="uil uil-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="uil uil-instagram"></i></a></li>
+                    <li><a href="#"><i class="uil uil-twitter"></i></a></li>
+                    <li><a href="#"><i class="uil uil-linkedin"></i></a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="footer__copyright">
+            <small>Copyright &copy; YourAcademy </small>
+        </div>
+    </footer>
+
+
+
+
+    <script src="/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script class="buysellcrousel">
+        var buysellswiper = new Swiper(".buysellSwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            autoplay: {
+                delay: 3000,
+            },
+        });
+    </script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            centeredSlides: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            //window width>=600
+            breakpoints: {
+                600: {
+                    slidesPerView: 2
+                }
+            }
+        });
+    </script>
+</body>

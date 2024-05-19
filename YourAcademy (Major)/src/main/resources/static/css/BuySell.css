@@ -1,0 +1,549 @@
+/* ------------- Crousel ------------- */
+.PgCrousel__container {
+    width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* ------------- Special offer1 ------------- */
+.special__offer {
+    margin: 3rem 3rem;
+    padding: 0;
+    width: auto;
+}
+
+.special__offer1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+}
+
+.left__offer,
+.right__offer {
+    height: 30rem;
+}
+
+.offer__image img {
+    height: 28rem;
+    width: 100%;
+}
+
+.offer__text {
+    padding-left: 4rem;
+    font-size: 1.8rem;
+    position: relative;
+    bottom: 20rem;
+    color: white;
+}
+
+.offer__text a {
+    text-align: center;
+}
+
+.offer-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.2rem;
+    height: 2.5rem;
+    width: 10rem;
+    text-align: center;
+    font-size: smaller;
+}
+
+/* ------------- Benifits ------------- */
+.benifits {
+    margin: 3rem 3rem;
+    width: auto;
+    padding: 0;
+    background: var(--color-primary);
+}
+
+.benifit {
+    display: flex;
+    justify-content: space-evenly;
+    column-gap: 2rem;
+    align-items: center;
+    height: 10rem;
+    border-radius: 0.2rem;
+}
+
+.benifit__items {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.benifit__items img {
+    height: 4rem;
+    width: 4rem;
+    object-fit: fill;
+}
+
+/* ------------- Product1 ------------- */
+.products {
+    margin: 3rem 3rem;
+    padding: 2rem 0;
+    width: auto;
+    background: var(--color-bg2);
+}
+
+.products h2 {
+    text-align: center;
+    margin: 0;
+}
+
+.product1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 2rem 6rem;
+}
+
+.product__card {
+    width: 15rem;
+    height: 20rem;
+    text-align: center;
+    justify-content: center;
+    background: var(--color-primary);
+    border: 1px solid transparent;
+    transition: var(--transition);
+    cursor: pointer;
+    margin: 1rem 0rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.product__card:hover {
+    background: transparent;
+    border-color: var(--color-primary);
+}
+
+.product__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product__image img {
+    width: 80%;
+    height: 10rem;
+    object-fit: fill;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+
+}
+
+.product__image img:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.product__desc {
+    width: 100%;
+    padding: auto;
+}
+
+.product__card p {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.product__card p svg {
+    height: 1.2rem;
+    width: 1.2rem;
+}
+
+.buy-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-primary {
+    border-radius: 1rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-primary:hover {
+    background: var(--color-bg2);
+}
+
+/* ------------- Stores-Category ------------- */
+.stores_categories {
+    background: var(--color-bg2);
+    margin: 3rem 3rem;
+    width: auto;
+}
+
+.stores_categories h2 {
+    text-align: center;
+    margin: 0;
+}
+
+.store__category {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 4rem;
+}
+
+.store__items {
+    padding: 1rem 1rem;
+    text-align: center;
+}
+
+.items {
+    width: 100%;
+    text-align: center;
+}
+
+.items:nth-child(1) {
+    padding-left: 3rem;
+}
+
+.items h4 {
+    width: 100%;
+    padding: 0;
+}
+
+.item-image {
+    border: 1px solid transparent;
+    border-radius: 50%;
+    height: 8rem;
+    width: 8rem;
+    background: rgb(200, 200, 252);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.store__items img {
+    height: 50%;
+    width: 50%;
+    object-fit: fill;
+    align-items: center;
+    mix-blend-mode: multiply;
+    cursor: pointer;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: var(--transition);
+
+}
+
+.store__items img:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.store__items h4 {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.store__items h4:hover {
+    color: var(--color-bg);
+    cursor: pointer;
+}
+
+/* ------------- NewsLatters ------------- */
+.newslatters {
+    background: var(--color-bg2);
+    margin: 3rem 3rem;
+    width: auto;
+    text-align: center;
+}
+
+.newslatters h2 {
+    margin: 0;
+    padding: 1rem 0;
+    line-height: 2rem;
+}
+
+.newslatters p {
+    line-height: 6rem;
+}
+
+.input-wrapper {
+    display: inline-block;
+    position: relative;
+}
+
+.input-wrapper input[type="text"] {
+    padding-right: 40rem;
+    padding-left: 2rem;
+    width: 100%;
+    height: 4rem;
+    box-sizing: border-box;
+    background: var(--color-bg);
+    color: var(--color-white);
+    border-radius: 2rem;
+}
+
+.input-wrapper a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.news-btn {
+    border-radius: 2rem;
+    height: 4rem;
+    width: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* --------------- Responsiveness --------------- */
+
+/* ------------- Tablets ------------- */
+@media screen and (max-width: 1024px) {
+
+    /* ----------- Special offer1 --------- */
+    .special__offer {
+        margin: 3rem 2.5rem;
+        width: var(--container-width-md);
+    }
+
+    .offer__text {
+        padding-left: 2rem;
+        font-size: 1.5rem;
+        bottom: 22rem;
+    }
+
+    .special__offer1 {
+        column-gap: 1.5rem;
+    }
+
+    .left__offer,
+    .right__offer {
+        height: 28rem;
+    }
+
+    /* ------------- Benifits ------------- */
+    .benifits {
+        margin: 3rem 2.5rem;
+        width: var(--container-width-md);
+    }
+
+    .benifit {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .benifit__items:nth-child(1) {
+        border-right: 1px solid var(--color-bg2);
+        border-bottom: 1px solid var(--color-bg2);
+    }
+
+    .benifit__items:nth-child(2) {
+        border-left: 1px solid var(--color-bg2);
+        border-bottom: 1px solid var(--color-bg2);
+    }
+
+    .benifit__items:nth-child(3) {
+        border-top: 1px solid var(--color-bg2);
+        border-right: 1px solid var(--color-bg2);
+    }
+
+    .benifit__items:nth-child(4) {
+        border-top: 1px solid var(--color-bg2);
+        border-left: 1px solid var(--color-bg2);
+    }
+
+    /* ------------- Product1 ------------- */
+    .products {
+        margin: 3rem 2.5rem;
+        width: var(--container-width-md);
+    }
+
+    .product1 {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+        padding: 2rem 1rem 2rem 3rem;
+    }
+
+    .product__card:nth-child(odd) {
+        margin-left: 2rem;
+    }
+
+    /* ---------- Stores-Category --------- */
+    .stores_categories {
+        margin: 3rem 2.5rem;
+        width: var(--container-width-md);
+        padding: 2.5rem;
+    }
+
+    .items:nth-child(1) {
+        padding-left: 0rem;
+    }
+
+    .store__category {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 2rem;
+    }
+
+    /* ----------- NewsLatters ----------- */
+    .newslatters {
+        margin: 3rem 3rem;
+        width: var(--container-width-md);
+        padding: 2.5rem;
+        height: 22rem;
+    }
+
+    .input-wrapper input[type="text"] {
+        padding-right: 20rem;
+    }
+}
+
+/* ------------- Phone ------------- */
+@media screen and (max-width: 600px) {
+
+    /* -------- Special offer1 ---------- */
+    .special__offer {
+        margin: 3rem 0.9rem;
+        padding: 0 1rem;
+        width: var(--container-width-sm);
+    }
+
+    .special__offer1 {
+        grid-template-columns: 1fr;
+    }
+
+    .offer__text {
+        font-size: 1.2rem;
+    }
+
+    .offer__image img {
+        height: 25rem;
+
+    }
+
+    .left__offer {
+        margin-bottom: 2rem;
+    }
+
+    .left__offer,
+    .right__offer {
+        height: 25rem;
+    }
+
+    /* ------------- Benifits ------------- */
+    .benifits {
+        margin: 2rem 0.9rem;
+        width: var(--container-width-sm);
+        padding: 0 1rem;
+        height: 23rem;
+    }
+
+    .benifit {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 2rem 0;
+    }
+
+    .benifit__items:nth-child(1) {
+        border-right: none;
+        border-bottom: 1px solid var(--color-bg2);
+    }
+
+    .benifit__items:nth-child(2) {
+        border-left: none;
+        border-bottom: 1px solid var(--color-bg2);
+    }
+
+    .benifit__items:nth-child(3) {
+        border-top: none;
+        border-right: none;
+    }
+
+    .benifit__items:nth-child(4) {
+        border-top: 1px solid var(--color-bg2);
+        border-left: none;
+    }
+
+    /* ------------- Product1 ------------- */
+    .products {
+        margin: 3rem 0.9rem;
+        padding: 2rem 1rem;
+        width: var(--container-width-sm);
+    }
+
+    .product1 {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 1.5rem 2.8rem;
+    }
+
+    .product__card:nth-child(odd) {
+        margin-left: 0;
+    }
+
+    /* ------------- Stores-Category ------------- */
+    .stores_categories {
+        margin: 3rem 0.9rem;
+        width: var(--container-width-sm);
+        padding: 2rem 1rem;
+    }
+
+    .store__category {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+    }
+
+    /* ------------- NewsLatters ------------- */
+    .newslatters {
+        margin: 3rem 0.9rem;
+        width: var(--container-width-sm);
+        padding: 2rem 1rem;
+        height: 22rem;
+    }
+
+    .newslatters h2 {
+        margin: 0;
+        padding: 1rem 0;
+        line-height: 2rem;
+    }
+
+    .newslatters p {
+        line-height: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    input {
+        margin-bottom: 2rem;
+    }
+
+    .input-wrapper input[type="text"] {
+        padding-right: 0;
+        padding-left: 0;
+        height: 2.5rem;
+        width: 20rem;
+        border-radius: 1.5rem;
+        text-align: center;
+    }
+
+    .input-wrapper a {
+        position: relative;
+        bottom: -5%;
+        left: 28%;
+        cursor: pointer;
+    }
+
+    .news-btn {
+        border-radius: 2rem;
+        height: 2.5rem;
+        width: 8rem;
+    }
+
+
+}

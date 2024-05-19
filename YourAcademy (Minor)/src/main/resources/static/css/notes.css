@@ -1,0 +1,31 @@
+/* --------------- Notes --------------- */
+.notes h2 {
+    margin: 3rem 0;
+}
+
+.notes-filter {
+    background: var(--color-bg2);
+    text-align: center;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+}
+
+.filter {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.filter h4:hover {
+    color: var(--color-bg);
+}
+
+
+.notes__image img {
+    height: 15rem;
+    width: 100%;
+    object-fit: fill;
+}

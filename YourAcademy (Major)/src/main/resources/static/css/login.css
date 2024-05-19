@@ -1,0 +1,174 @@
+.contact__container {
+    background: var(--color-bg1);
+    padding: 2rem 2rem;
+    height: 40rem;
+    margin: 3rem auto;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+}
+
+
+/* ------------- Form ------------- */
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-right: 4rem;
+}
+
+
+#loginSuccess{
+	animation-name: login;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes login{
+  0%   {color: red; font-weight: bolder;}
+  25%  {color: yellow;}
+  50%  {color: skyblue; font-weight: bolder;}
+  100% {color: orangered;}
+}
+
+.login__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login__image img {
+    height: 35rem;
+    width: 100%;
+}
+
+.user__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user__image img {
+    border: 1px solid transparent;
+    border-radius: 50%;
+    object-fit: fill;
+    height: 8rem;
+    width: 8rem;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user img {
+    height: 2.9rem;
+    width: 2.9rem;
+    object-fit: fill;
+}
+
+.contact__form input[type="text"] {
+    width: 50%;
+}
+
+.form__name {
+    display: flex;
+    gap: 1.2rem;
+}
+
+/* */
+input,
+textarea {
+    width: 100%;
+    padding: 1rem;
+    background: var(--color-bg);
+    color: var(--color-white);
+}
+
+.pass__instruction ul li {
+    font-size: 0.7rem;
+    list-style-type: disc;
+    margin-left: 2.5rem;
+}
+
+.contact__form .btn {
+    width: max-content;
+    margin-left: 8rem;
+    cursor: pointer;
+}
+
+.reset__pass {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reset__pass a:hover {
+    color: var(--color-primary);
+}
+
+.register a:hover {
+    color: var(--color-primary);
+}
+
+/* --------------- Responsiveness --------------- */
+
+/* ------------- Tablets ------------- */
+@media screen and (max-width: 1024px) {
+    .contact {
+        padding-bottom: 0;
+    }
+
+    .contact__container {
+        gap: 1.5rem;
+        margin-top: 3rem;
+        margin-left: 2rem;
+        height: auto;
+        padding: 1.5rem;
+    }
+
+    .contact__form {
+        align-self: center;
+        margin-right: 1rem;
+    }
+
+    .reset__pass a {
+        font-size: smaller;
+    }
+
+    .contact__form .btn {
+        margin-left: 1.5rem;
+    }
+
+    .register {
+        font-size: small;
+    }
+}
+
+/* ------------- Phone ------------- */
+@media screen and (max-width: 600px) {
+    .contact__container {
+        grid-template-columns: 1fr;
+        gap: 0;
+        margin: 2rem 0.9rem;
+        padding: 0;
+    }
+
+    .contact__form {
+        margin: 0 1.5rem 3rem;
+    }
+
+    .login__image img {
+        display: none;
+    }
+
+    .form__name {
+        flex-direction: column;
+    }
+
+    .form__name input[type="text"] {
+        width: 100%;
+    }
+}

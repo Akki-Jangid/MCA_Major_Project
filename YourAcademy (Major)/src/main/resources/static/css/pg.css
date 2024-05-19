@@ -1,0 +1,561 @@
+.PgCrousel__container {
+    width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+
+#pgMap{
+	position: absolute;
+	top: 20%;
+	left: 44%;
+    display: block;
+    width: 200px;
+    height: 45px;
+    background: #4E9CAF;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+    animation: glowingMap 1300ms infinite;
+}
+@keyframes glowingMap {
+        0% {
+          background-color: skyblue;
+          box-shadow: 0 0 5px skyblue;
+        }
+        50% {
+          background-color: red;
+          box-shadow: 0 0 20px #49e819;
+        }
+        100% {
+          background-color: lightseagreen;
+          box-shadow: 0 0 5px #2ba805;
+        }
+      }
+
+
+
+.PgFinder {
+    padding-top: 1rem;
+}
+
+#pgTable{
+	font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#pgTable td, #pgTable th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+
+#pgTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* This is for Add Review Button */
+.pgReview{
+	display: block;
+	position: absolute;
+	left: 10%;
+    width: 200px;
+    height: 45px;
+    background: #4E9CAF;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+    animation: glowingReview 1300ms infinite;
+}
+
+@keyframes glowingReview {
+        0% {
+          background-color: skyblue;
+          box-shadow: 0 0 5px deepskyblue;
+        }
+        50% {
+          background-color: orange;
+          box-shadow: 0 0 20px orange;
+        }
+        100% {
+          background-color: lightseagreen;
+          box-shadow: 0 0 5px lightseagreen;
+        }
+      }
+
+
+h4{
+	text-align: center;
+	position: relative;
+	bottom: 20px;
+}
+
+#pgMap{
+	text-align: center;
+	animation-name: pgonMap;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes pgonMap{
+  0%   {color: red; font-weight: bolder;}
+  25%  {color: yellow;}
+  50%  {color: skyblue; font-weight:bolder; }
+  100% {color: orangered; }
+}
+
+
+.filter-bar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: var(--container-width-lg);
+    padding: 2rem 10rem;
+
+}
+
+.filter-img {
+    position: relative;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    background: var(--color-white);
+    cursor: pointer;
+    text-align: center;
+    object-fit: fill;
+}
+
+.pg__container {
+    background: var(--color-bg1);
+    border-radius: 1rem;
+    padding: 1rem 1rem;
+    margin: 2rem auto;
+}
+
+.rooms {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.room__image img {
+    border: 1px solid var(--color-white);
+    border-radius: 1rem;
+    width: 30rem;
+    height: 18rem;
+    object-fit: fill;
+}
+
+.rating {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    text-align: center;
+    margin: auto;
+    padding: auto;
+
+}
+
+.room__info {
+    margin-top: 2rem;
+    line-height: 1rem;
+    text-align: left;
+}
+
+.room__info p {
+    line-height: 1.5rem;
+}
+
+.room__info .gender {
+    margin-top: 1rem;
+    height: 4rem;
+    width: auto;
+}
+
+.price p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* justify-content: space-between; */
+}
+
+/* --------------- Responsiveness --------------- */
+
+/* ------------- Tablets ------------- */
+@media screen and (max-width: 1024px) {
+    .PgFinder {
+        width: var(--container-width-md);
+        margin: auto;
+        padding: auto;
+
+    }
+
+    .rooms {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .room__image img {
+        width: 100%;
+    }
+
+    .rating {
+        margin-top: 0 auto;
+    }
+
+    .room__info {
+        padding: 0 2rem 0 2rem;
+        line-height: 2rem;
+    }
+
+    .price {
+        padding: 0 1rem 0 1rem;
+    }
+}
+
+/* ------------- Phone ------------- */
+@media screen and (max-width: 600px) {
+    .filter-bar {
+        width: var(--container-width-sm);
+        align-items: center;
+        justify-content: center;
+    }
+
+    .PgFinder {
+        width: var(--container-width-sm);
+        text-align: center;
+        margin: auto;
+        padding: auto;
+
+    }
+
+    .filter-bar {
+        gap: 3rem;
+    }
+
+    .room__image img {
+        width: 100%;
+        text-align: center;
+    }
+
+    .details {
+        padding: 0;
+    }
+
+    .rating {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .gender__image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .price {
+        flex-wrap: wrap;
+        flex-direction: column;
+        /* flex-direction: column; */
+    }
+
+    .price p {
+
+        font-weight: 500;
+        font-size: 1.8rem;
+    }
+
+}
+
+/* ----------------------------- Manglam PG ------------------------------- */
+/* ------------- PgCrousel ------------- */
+.PgCrousel__container {
+    overflow-x: hidden;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.pgcrousel {
+    cursor: pointer;
+}
+
+.swiper-slide img {
+    height: 35rem;
+}
+
+/* ------------- Propertiy details ------------- */
+
+.property-summary {
+    background: var(--color-bg1);
+    padding: 2rem 1rem;
+    margin: 2rem 0 0 0;
+}
+
+.room-section h2 {
+    /* font-family: 'Times New Roman', Times, serif; */
+    margin-bottom: 1rem;
+    line-height: 2rem;
+}
+
+.room-section h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2rem;
+}
+
+.room-section h4 span {
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.gen {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.gen .gender {
+    margin-top: 1rem;
+    height: 6rem;
+    width: auto;
+}
+
+/* ------------- Amenities ------------- */
+.property-amenities {
+    background: var(--color-bg2);
+
+}
+
+.amenities-page-container h1 {
+    /* text-align: center; */
+    padding: 2rem 0 2rem 0;
+}
+
+.amenities {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5rem;
+    /* justify-content: space-evenly; */
+    padding: 2rem 3rem;
+
+}
+
+.amenity-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 1rem 0;
+}
+
+.amenity-container img {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.amenity-container span {
+    padding-left: 1rem;
+}
+
+/* ------------- Property-About ------------- */
+.property-about {
+    background: var(--color-bg1);
+    padding: 5rem 0;
+}
+
+/* ------------- Property-Rating ------------- */
+.property-rating {
+    background: var(--color-bg2);
+    padding: 2rem 0 5rem 0;
+}
+
+.rating__details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10rem;
+}
+
+.rating-criteria {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    padding: 1rem 2rem;
+    text-align: left;
+}
+
+.rating-text i {
+    padding: 0 1rem 0 0;
+}
+
+.right-rating-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-rating-container {
+    border: 1px solid var(--color-white);
+    background: var(--color-bg1);
+    border-radius: 50%;
+    height: 10rem;
+    width: 10rem;
+    text-align: center;
+}
+
+.rating-circle-star-container {
+    font-size: larger;
+}
+
+/* --------------- Responsiveness --------------- */
+
+/* ------------- Tablets ------------- */
+@media screen and (max-width: 1024px) {
+
+    /* ------------- Amenities ------------- */
+
+    .amenities {
+        gap: 1rem;
+        padding: 2rem 0rem;
+    }
+
+    .amenities__item {
+        text-align: left;
+    }
+
+    .amenities__item h4 {
+        font-size: medium;
+    }
+
+    .amenity-container img {
+        height: 1.2rem;
+        width: 1.2rem;
+    }
+
+    .amenity-container span {
+        padding-left: 1rem;
+        font-size: small;
+    }
+
+    /* ------------- Property-Rating ------------- */
+
+    .rating-page-container {
+        width: 100%;
+        padding: 0 2rem;
+        margin: 0;
+    }
+
+    .rating-criteria {
+        gap: 3rem;
+        padding: 1rem 0;
+    }
+
+    .rating__details {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0rem;
+    }
+
+    .left-rating-container {
+        text-align: end;
+    }
+
+    .right-rating-container {
+        text-align: center;
+    }
+}
+
+/* ------------- Phone ------------- */
+@media screen and (max-width: 600px) {
+
+    /* ------------- PgCrousel ------------- */
+    .swiper-slide img {
+        height: 22rem;
+    }
+
+    .PgCrousel__container {
+        margin-bottom: 0;
+    }
+
+    /* ------------- Propertiy details ------------- */
+    .property-summary {
+        margin-top: 1rem;
+    }
+
+    .room__info {
+        width: 100%;
+        padding: 0;
+    }
+
+    /* ------------- Amenities ------------- */
+    .amenities {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+        padding: 1.5rem 1rem;
+    }
+
+    .amenities-page-container h1 {
+        text-align: center;
+    }
+
+    /* ------------- Property-About ------------- */
+    .property-about {
+        padding: 4rem 0;
+    }
+
+    .property-content h1 {
+        text-align: center;
+        padding: 0 0 2rem 0;
+        font-size: 2rem;
+    }
+
+    /* ------------- Property-Rating ------------- */
+    .rating-page-container h1 {
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .rating__details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    .rating-criteria {
+        gap: 2rem;
+    }
+
+    /* ------------- testimonials ------------- */
+    .rating-page-container h1 {
+
+        .testimonials__container {
+            padding: 3rem 0;
+            margin-bottom: 2rem;
+        }
+
+        .testimonials__container h1 {
+            text-align: center;
+            font-size: 2rem;
+        }
+
+    }
+}
